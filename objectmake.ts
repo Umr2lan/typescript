@@ -130,11 +130,11 @@ let planets_name : string[] = ["mercury","venus","earth","mars","jupiter","satur
         }
         
     ]
-    document.write('<h2>Planets Details</h2>'); // Adding a heading
+    document.write('<h2>Planets Details</h2>');
     planets_deatils.forEach((P) => {
         console.log(P);
         document.write(`
-            <div class="container mt-4">
+            <div class="container col-md-4 my-3">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">${P.name}</h5>

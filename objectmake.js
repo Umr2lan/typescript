@@ -76,5 +76,5 @@ var planets_deatils = [
 document.write('<h2>Planets Details</h2>'); // Adding a heading
 planets_deatils.forEach(function (P) {
     console.log(P);
-    document.write("\n            <div class=\"container mt-4\">\n                <div class=\"card\">\n                    <div class=\"card-body\">\n                        <h5 class=\"card-title\">".concat(P.name, "</h5>\n                        <p class=\"card-text\">Distance from Sun: ").concat(P.distance_from_sun, "</p>\n                        <p class=\"card-text\">Moons: ").concat(P.moons, "</p>\n                        <p class=\"card-text\">Special Feature: ").concat(P.special_feature, "</p>\n                    </div>\n                </div>\n            </div>\n        "));
+    document.write("\n            <div class=\"container col-md-4 my-3\">\n                <div class=\"card\">\n                    <div class=\"card-body\">\n                        <h5 class=\"card-title\">".concat(P.name, "</h5>\n                        <p class=\"card-text\">Distance from Sun: ").concat(P.distance_from_sun, "</p>\n                        <p class=\"card-text\">Moons: ").concat(P.moons, "</p>\n                        <p class=\"card-text\">Special Feature: ").concat(P.special_feature, "</p>\n                    </div>\n                </div>\n            </div>\n        "));
 });
