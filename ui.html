@@ -44,6 +44,48 @@
                     <input type="text" id="owner_age" class="form-control" placeholder="Enter Owner Age">
                 </div>
 
+                <div class="mb-3">
+                    <select name="" id="category" class="form-select" required>
+                        <option value="">Select Category</option>
+                        <option value="Home Appliances">Home Appliances</option>
+                        <option value="Furniture">Furniture</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Clothing">Clothing</option>
+                        <option value="Books">Books</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                   <select name="" id="mall_name" class="form-select">
+                    <option value="">Select Mall</option>
+                    <option value="Zainab Mall">Zainab Mall</option>
+                    <option value="Al-Hidayah Mall">Al-Hidayah Mall</option>
+                    <option value="Al-Furqan Mall">Al-Furqan Mall</option>
+                    <option value="Al-Badr Mall">Al-Badr Mall</option>
+                   </select>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="gender" class="form-label">Gender</label>
+                    <br>
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender"  value="female">Female
+                    <input type="radio" name="gender" value="other">Other
+                </div>
+
+                <div class="mb-3">
+                    <label for="yesorno" class="form-label">Do you want to add more shops?</label>
+                    <br>
+                    <input type="radio" name="yesorno" value="yes">Yes
+                    <input type="radio" name="yesorno" value="no">No
+                </div>
+
+               
+
+
+
                 <button onclick="collect_data_from_user(); alert('Data Collected')" class="btn btn-primary">Submit</button>            
             </div>
         </div>
