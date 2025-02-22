@@ -1,161 +1,211 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Personal & Professional Information</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="info.js"></script>
+    <style>
+        body {
+            background-color: #f0f4f8;
+            font-family: 'Arial', sans-serif;
+        }
+        h2 {
+            color: #007bff;
+            margin-bottom: 30px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        h4 {
+            color: #343a40;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+        .form-group label {
+            font-weight: bold;
+            color: #495057;
+        }
+        .form-control {
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            border-radius: 0.5rem;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .form-check-label {
+            margin-left: 5px;
+        }
+        .form-check-input:checked {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .container {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 1rem;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        hr {
+            border-top: 2px solid #007bff;
+        }
+    </style>
 </head>
 <body>
     <div class="container mt-5">
         <h2 class="text-center">Personal & Professional Information</h2>
-    
 
-            <!-- Personal Information -->
-            <h4>Personal Information</h4>
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" class="form-control" id="name" name="name" required>
-            </div>
+        <!-- Personal Information -->
+        <h4>Personal Information</h4>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
 
-            <div class="form-group">
-                <label for="dob">Date of Birth:</label>
-                <input type="date" class="form-control" id="dob" name="dob" required>
-            </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" class="form-control" id="dob" name="dob" required>
+        </div>
 
-            <div class="form-group">
-                <label>Gender:</label><br>
-                <div class="form-check form-check-inline">
-                    <input type="radio" class="form-check-input" name="gender" value="Male">
-                    <label class="form-check-label" for="male">Male</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input type="radio" class="form-check-input" name="gender" value="Female">
-                    <label class="form-check-label" for="female">Female</label>
-                </div>
+        <div class="form-group">
+            <label>Gender:</label><br>
+            <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" name="gender" value="Male" id="male">
+                <label class="form-check-label" for="male">Male</label>
             </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" name="gender" value="Female" id="female">
+                <label class="form-check-label" for="female">Female</label>
+            </div>
+        </div>
 
-            <div class="form-group">
-                <label for="religion">Religion:</label>
-                <select class="form-control" id="religion" name="religion" required>
-                    <option value="Christianity">Christianity</option>
-                    <option value="Islam">Islam</option>
-                    <option value="Hinduism">Hinduism</option>
-                    <option value="Buddhism">Buddhism</option>
-                    <option value="Other">Other</option>
-                </select>
-            </div>
+        <div class="form-group">
+            <label for="religion">Religion:</label>
+            <select class="form-control" id="religion" name="religion" required>
+                <option value="Christianity">Christianity</option>
+                <option value="Islam">Islam</option>
+                <option value="Hinduism">Hinduism</option>
+                <option value="Buddhism">Buddhism</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
 
-            <div class="form-group">
-                <label>Hobbies:</label><br>
-                <div class="form-check form-check-inline">
-                    <input type="checkbox" class="form-check-input" name="hobbies" value="Sports">
-                    <label class="form-check-label" for="Sports">Sports</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input type="checkbox" class="form-check-input" name="hobbies" value="Coding">
-                    <label class="form-check-label" for="Coding">Coding</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input type="checkbox" class="form-check-input" name="hobbies" value="Others">
-                    <label class="form-check-label" for="Others">Others</label>
-                </div>
+        <div class="form-group">
+            <label>Hobbies:</label><br>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" name="hobbies" value="Sports" id="hobby_sports">
+                <label class="form-check-label" for="hobby_sports">Sports</label>
             </div>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" name="hobbies" value="Coding" id="hobby_coding">
+                <label class="form-check-label" for="hobby_coding">Coding</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" name="hobbies" value="Others" id="hobby_others">
+                <label class="form-check-label" for="hobby_others">Others</label>
+            </div>
+        </div>
 
-            <div class="form-group">
-                <label for="address">Address:</label>
-                <textarea class="form-control" id="address" name="address" rows="4" required></textarea>
-            </div>
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea class="form-control" id="address" name="address" rows="4" required></textarea>
+        </div>
 
-            <!-- Academic Information -->
-            <h4>Academic Information</h4>
-            <div class="form-group">
-                <label for="academic_info">Academic Info:</label>
-                <select class="form-control" id="academic_info" name="academic_info" required>
-                    <option value="High School">High School</option>
-                    <option value="Undergraduate">Undergraduate</option>
-                    <option value="Postgraduate">Postgraduate</option>
-                    <option value="Other">Other</option>
-                </select>
-            </div>
+        <!-- Academic Information -->
+        <h4>Academic Information</h4>
+        <div class="form-group">
+            <label for="academic_info">Academic Info:</label>
+            <select class="form-control" id="academic_info" name="academic_info" required>
+                <option value="High School">High School</option>
+                <option value="Undergraduate">Undergraduate</option>
+                <option value="Postgraduate">Postgraduate</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
 
-            <div class="form-group">
-                <label for="pass_out_year">Year of Pass-Out:</label>
-                <select class="form-control" id="pass_out_year" name="pass_out_year" required>
-                    <option value="2010">2010</option>
-                    <option value="2011">2011</option>
-                    <option value="2012">2012</option>
-                    <option value="2013">2013</option>
-                    <option value="2014">2014</option>
-                    <option value="2015">2015</option>
-                    <option value="2016">2016</option>
-                    <option value="2017">2017</option>
-                    <option value="2018">2018</option>
-                    <option value="2019">2019</option>
-                    <option value="2020">2020</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                    <option value="2023">2023</option>
-                    <option value="2024">2024</option>
-                    <option value="2025">2025</option>
-                </select>
-            </div>
+        <div class="form-group">
+            <label for="pass_out_year">Year of Pass-Out:</label>
+            <select class="form-control" id="pass_out_year" name="pass_out_year" required>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+            </select>
+        </div>
 
-            <div class="form-group">
-                <label for="gpa">GPA:</label>
-                <input type="number" class="form-control" id="gpa" name="gpa" step="0.01" min="0" max="4" required>
-            </div>
+        <div class="form-group">
+            <label for="gpa">GPA:</label>
+            <input type="number" class="form-control" id="gpa" name="gpa" step="0.01" min="0" max="4" required>
+        </div>
 
-            <div class="form-group">
-                <label for="percentage">Percentage:</label>
-                <input type="number" class="form-control" id="percentage" name="percentage" step="0.01" min="0" max="100" required>
-            </div>
+        <div class="form-group">
+            <label for="percentage">Percentage:</label>
+            <input type="number" class="form-control" id="percentage" name="percentage" step="0.01" min="0" max="100" required>
+        </div>
 
-            <div class="form-group">
-                <label for="degree">Degree:</label>
-                <input type="text" class="form-control" id="degree" name="degree" required>
-            </div>
+        <div class="form-group">
+            <label for="degree">Degree:</label>
+            <input type="text" class="form-control" id="degree" name="degree" required>
+        </div>
 
-            <div class="form-group">
-                <label for="university">University:</label>
-                <input type="text" class="form-control" id="university" name="university" required>
-            </div>
+        <div class="form-group">
+            <label for="university">University:</label>
+            <input type="text" class="form-control" id="university" name="university" required>
+        </div>
 
-            <!-- Professional Information -->
-            <h4>Professional Information</h4>
-            <div class="form-group">
-                <label for="last_company">Last Company:</label>
-                <input type="text" class="form-control" id="last_company" name="last_company" required>
-            </div>
+        <!-- Professional Information -->
+        <h4>Professional Information</h4>
+        <div class="form-group">
+            <label for="last_company">Last Company:</label>
+            <input type="text" class="form-control" id="last_company" name="last_company" required>
+        </div>
 
-            <div class="form-group">
-                <label for="years_experience">Years of Experience:</label>
-                <input type="number" class="form-control" id="years_experience" name="years_experience" min="0" required>
-            </div>
+        <div class="form-group">
+            <label for="years_experience">Years of Experience:</label>
+            <input type="number" class="form-control" id="years_experience" name="years_experience" min="0" required>
+        </div>
 
-            <div class="form-group">
-                <label for="expected_salary">Expected Salary:</label>
-                <input type="number" class="form-control" id="expected_salary" name="expected_salary" min="0" required>
-            </div>
+        <div class="form-group">
+            <label for="expected_salary">Expected Salary:</label>
+            <input type="number" class="form-control" id="expected_salary" name="expected_salary" min="0" required>
+        </div>
 
-            <div class="form-group">
-                <label for="reason_leaving">Reason for Leaving Your Last Company:</label>
-                <textarea class="form-control" id="reason_leaving" name="reason_leaving" rows="4" required></textarea>
-            </div>
-            <hr>
-            <div class="form-group">
-        <input type="checkbox" id="agree" value="agree" onchange="agreement()">&nbsp;I agree with the Terms & Conditions of the Company
-                <br><br>
-            <button type="button" onclick="per_info()" class="btn btn-primary btn-block" id="btn" disabled >Submit</button>
-     
+        <div class="form-group">
+            <label for="reason_leaving">Reason for Leaving Your Last Company:</label>
+            <textarea class="form-control" id="reason_leaving" name="reason_leaving" rows="4" required></textarea>
+        </div>
+        <hr>
+        <div class="form-group">
+            <input type="checkbox" id="agree" value="agree" onchange="agreement()">&nbsp;I agree with the Terms & Conditions of the Company
+            <br><br>
+            <button type="button" onclick="per_info()" class="btn btn-primary btn-block" id="btn" disabled>Submit</button>
+        </div>
+
+        <!-- Bootstrap JS & Dependencies -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </div>
-
-    <!-- Bootstrap JS & Dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
